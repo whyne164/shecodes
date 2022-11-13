@@ -1,0 +1,119 @@
+<%- include("header")%>
+<title>Для учеников</title>
+<style>
+    body{
+        margin: 0;
+    }
+        @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+    .li-item{
+    font-family: serif;
+    font-size: 20px;
+    font: fa-bookmark;
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+
+section{
+margin-bottom: 10%;
+padding: 4rem;
+background: #ffead2;
+border-radius: 8px;
+box-shadow: 0px 0px 0 1px transparentize(#672e70, 1.97), 0px 0px 0 3px transparentize(#204754, 0.98);
+}
+.site-wrap{
+max-width: 700px;
+margin: 0 auto;
+padding: 10rem 2rem;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: #672e70;
+    text-decoration: #a23bb1;
+}
+
+
+.li-item{
+    font-family: serif;
+    font-size: 20px;
+    font: fa-bookmark;
+}
+main{
+    padding: 1% 0;
+    position: relative;
+    background: #cfad99;
+    box-shadow: 0px -10px 60px rgba(0,0,0,0.25);
+    height: 100%;
+}
+</style>
+</head>
+<body>   
+
+<main role="main">
+    <div class="site-wrap">
+
+<section>
+<h1>Список уроков</h1>
+<ul class="">
+    <li class="li-item"><a class="nav-link scroll_to" href="#video1">Урок 1. Что такое буллинг и его виды, причины
+    </a></li>
+    <li class="li-item"><a class="nav-link scroll_to" href="#video2">Урок 2. Как распознать буллинг и отличие его от шутки
+    </a></li>
+    <li class="li-item"><a class="nav-link scroll_to" href="#video3">Урок 3. Как построить свои границы и защищаться от буллинга
+
+    </a></li>
+    <li class="li-item"><a class="nav-link scroll_to" href="#video4">Урок 4. Алгоритм действии при становлении свидетелем
+    </a></li>
+    <li class="li-item"><a class="nav-link scroll_to" href="#video5">Урок 5. Как объяснить близким про буллинг
+
+    </a></li>
+    <li class="li-item"><a class="nav-link scroll_to" href="#video5">Урок 6. Как поддержать жертв буллинга
+
+    </a></li>
+</ul>
+</section>
+
+
+<section class="data-scroll" id="video1">
+<h1 align="center">Урок 1. Что такое буллинг и его виды, причины</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SljXzyEkeD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<section class="data-scroll" id="video2">
+<h1 align="center">Урок 2. Влияние буллинга и последствия  </h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SljXzyEkeD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<section class="data-scroll" id="video3">
+<h1 align="center">Урок 3. Как распознать буллинг в классе и как с ним бороться </h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SljXzyEkeD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<section class="data-scroll" id="video4">
+<h1 align="center">Урок 4. Методы профилактики буллинга</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SljXzyEkeD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<section class="data-scroll" id="video5">
+<h1 align="center">Урок 5. Как понять, что ваш ребенок стал жертвой или зачинщиком</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SljXzyEkeD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<section class="data-scroll" id="video6">
+<h1 align="center">Урок 6. Как вести себя с ребенком?</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SljXzyEkeD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+    </div>
+</main>
+
+
+<% if(req.isAuthenticated()){%>
+   <ul>
+    <a href="chat" style=" text-decoration:none;"> <button  type="submit"  style="font-family: 'Tahoma'; background-color:#292929;  border-color: transparent;"  class="btn btn-info" >Click me</button>
+</a>
+   </ul> 
+<%}else{%>
+   
+<%}%>
+ <%- include("footer")%>

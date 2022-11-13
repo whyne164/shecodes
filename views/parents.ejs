@@ -1,0 +1,294 @@
+<%- include("header")%>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+<title>Для учителей и родителей</title>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+html{
+    min-height: 100%;
+    box-sizing: border-box;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+.site-wrap a{color: #000;}
+.site-wrap h1{
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+}
+.content{
+    margin: 0 auto;
+    max-width: 90%;
+    width: 720px;
+}
+main{
+    padding: 1% 0;
+    position: relative;
+    background: #cfad99;
+    box-shadow: 0px -10px 60px rgba(0,0,0,0.25);
+    height: 100%;
+}
+.zoom{
+    overflow: hidden;
+    padding-bottom: 55%;
+}
+.zoom_img{
+    position: fixed ;
+    top: 25%;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+}
+
+.site-wrap h1{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+.site-wrap p{
+    font-size: 2rem;
+     line-height: 2.8rem;
+}
+p b{
+    font-style: bold;
+}
+.img{
+    padding-left: 2cm;
+    height: 100%;
+}
+:last-child{
+        margin-bottom: -6px;
+}
+.site-wrap{
+max-width: 700px;
+margin: 0 auto;
+padding: 10rem 2rem;
+}
+section{
+margin-bottom: 10rem;
+padding: 4rem;
+background: #ffead2;
+border-radius: 8px;
+box-shadow: 0px 0px 0 1px transparentize(#672e70, 1.97), 0px 0px 0 3px transparentize(#204754, 0.98);
+}
+:last-child{
+    margin-bottom: 0;
+}
+[data-scroll]{
+opacity: 0;
+will-change: transform, scale, opacity;
+transform: translateY(6rem) scale(0.93);
+transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+[data-scroll="in"] {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+.splitting
+   .char{
+      color: transparent;
+   }
+:after{
+  visibility: visible;
+  color: #204754;
+  opacity: 0;
+  transform: translateY(30%);
+  transition: all 6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-delay: calc(2s + (04s * var(--char-index) ) );
+}
+[data-scroll="in"]
+    .char:after{
+    opacity: 1;
+    transform: translateY(0);
+}
+@media (max-width: 600px){
+    h1{
+        font-size: 3.4rem;
+        line-height: 3.6rem;       
+    }
+    p{
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+    }
+    .site-wrap{
+        padding: 6rem 1rem;
+    }
+    section{
+        margin-bottom: 6rem;
+        padding: 2.4rem;   
+    }
+}
+@media (max-width: 667px) {
+.zoom{
+    overflow: hidden;
+    padding-bottom: 75%;
+}
+}
+header .navbar-brand{
+    margin-left: 51px;
+    margin-top: 5px;
+}
+.logo{
+    position: absolute;
+}
+.header_div{
+    position: absolute;
+    height: 80;
+    width: 100;
+    left: 50%;
+    top: 70%;
+}
+.header_section{
+    background: none;
+}
+.header_p{
+    color: #ff9045 ;
+}
+.fas, .fa, .fab{
+font-family: "Font Awesome 5 Free";
+font-weight: 900
+}
+
+#btn-back-to-top {
+position: fixed;
+bottom: 20px;
+right: 20px;
+display: none;
+}
+button{
+    background: none;
+    border: none;
+}
+.li-item{
+    font-family: serif;
+    font-size: 20px;
+    font: fa-bookmark;
+}
+section a{
+    text-decoration: none;
+}
+section a:hover{
+    color: #672e70;
+    text-decoration: #a23bb1;
+}
+
+</style>
+</head>
+<body>
+<header class="zoom">
+    <img src="https://img.freepik.com/free-vector/banner-with-diverse-happy-people-group-standing-together-white_90220-141.jpg?w=2000" class="zoom_img">
+    <div class="header_div">
+       
+    </div>
+</header>
+<main role="main">
+<div class="site-wrap">
+
+<section class="data-scroll" id="article5">
+<h1 class="data-splitting">Признаками пострадавшего от буллинга могут быть:    </h1>
+<img src="https://cdni.iconscout.com/illustration/premium/thumb/group-of-diverse-people-cartoon-characters-holding-blank-banners-or-placards-2948614-2463407.png" height="300" width="500" class="img">
+<p>Cтрах пойти в школу или на работу </p>
+<p>Плохая или ухудшающаяся эффективность работы / учебы, неспособность сконцентрироваться</p>
+<p>Замкнутое поведение</p>
+<p>Депрессия</p>   
+<p>Потеря уверенности</p>   
+<p>Нежелание выходить на улицу</p>   
+<p>Рваная одежда, разбитые очки, пропавшие вещи</p>  
+<p>Синяки и травмы</p>  
+</section>
+
+<section class="data-scroll" id="article5">
+<h1 class="data-splitting">Кто чаще всего подвергается буллингу?    </h1>
+<img src="https://cdni.iconscout.com/illustration/premium/thumb/psychology-6299800-5295122.png" height="300" width="500" class="img">
+<p><b>Успешные</b> <br>Дети, у которых хорошо получается то, что они делают, могут подвергнуться издевательствам. Часто над ними издеваются, потому что они получают много положительного внимания со стороны сверстников и взрослых.  </p>
+<p><b>Умные, целеустремленные, творческие</b><br>В школе эти ученики стараются изо всех сил выполнять школьные задания. Или они учатся очень быстро и выполняют проекты и задания быстрее, чем другие ученики. Например, одаренных учеников  часто преследуют за отличную успеваемость в школе.     </p>
+<p><b>Уязвимые</b><br>Дети-интроверты с тревожным или покорным характером более подвержены издевательствам, чем дети-экстраверты с напористым характером. Большинство обидчиков хотят чувствовать себя сильными, поэтому часто выбирают детей более слабых, чем они сами. </p>
+<p><b>Изолированные</b><br>У многих жертв издевательств, как правило, меньше друзей, чем у других детей. Они могут быть отвергнуты сверстниками, исключены из общественных мероприятий и даже могут проводить обед и перерыв в одиночестве.  </p>
+<p><b>С отличительным внешним видом
+</b><br>Практически любые физические характеристики, отличные или уникальные, могут привлечь внимание обидчиков. Жертва может быть невысокого роста или высокая, худощавая или тучная. Может носить очки или иметь прыщи, большой нос или торчащие уши. Обидчик выбирает особенность и превращает ее в цель.  </p>
+<p><b>С религиозными или культурными убеждениями
+</b><br>Дети нередко подвергаются издевательствам за их религиозные убеждения, которые отличаются от убеждений других.  </p>
+<p><b>Другой расы
+</b><br>Иногда дети издеваются над другими, потому что они другой расы. </p>
+<p><b>С болезнью или инвалидностью
+</b><br>Обидчики часто преследуют детей с особыми потребностями. Это может включать детей с расстройством аутистического спектра, синдромом Аспергера, синдром дефицита внимания / гиперактивности, дислексией, синдром Дауна или любым другим отличительным состоянием. Дети с пищевой аллергией, астмой, плохим зрением и другими заболеваниями также могут стать мишенью для обидчика.  </p>
+</section>
+
+
+<section>
+<h1>Список уроков</h1>
+<ul class="">
+    <li class="li-item"><a class="nav-link scroll_to" href="#video1">Урок 1. Что такое буллинг и его виды, причины</a></li>
+    <li class="li-item"><a class="nav-link scroll_to" href="#video2">Урок 2. Влияние буллинга и последствия        </a></li>
+    <li class="li-item"><a class="nav-link scroll_to" href="#video3">Урок 3. Как распознать буллинг в классе и как с ним бороться        </a></li>
+    <li class="li-item"><a class="nav-link scroll_to" href="#video4">Урок 4. Методы профилактики буллинга  </a></li>
+    <li class="li-item"><a class="nav-link scroll_to" href="#video5">Урок 5. Как понять, что ваш ребенок стал жертвой или зачинщиком
+    </a></li>
+    <li class="li-item"><a class="nav-link scroll_to" href="#video6">Урок 6. Как вести себя с ребенком?
+    </a></li>
+</ul>
+</section>
+
+<section class="data-scroll" id="video1">
+<h1 align="center">Урок 1. Что такое буллинг и его виды, причины</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SljXzyEkeD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<section class="data-scroll" id="video2">
+<h1 align="center">Урок 2. Влияние буллинга и последствия  </h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SljXzyEkeD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<section class="data-scroll" id="video3">
+<h1 align="center">Урок 3. Как распознать буллинг в классе и как с ним бороться </h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SljXzyEkeD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<section class="data-scroll" id="video4">
+<h1 align="center">Урок 4. Методы профилактики буллинга</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SljXzyEkeD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<section class="data-scroll" id="video5">
+<h1 align="center">Урок 5. Как понять, что ваш ребенок стал жертвой или зачинщиком</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SljXzyEkeD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<section class="data-scroll" id="video6">
+<h1 align="center">Урок 6. Как вести себя с ребенком?</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SljXzyEkeD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+</div>
+</main>
+<button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+<i class="fas fa-angle-up fa-2xl"></i>
+</button>
+<script>
+let mybutton = document.getElementById("btn-back-to-top");
+window.onscroll = function () {
+scrollFunction();
+};
+function scrollFunction() {
+if (
+document.body.scrollTop > 20 ||
+document.documentElement.scrollTop > 20
+) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+mybutton.addEventListener("click", backToTop);
+function backToTop() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+ <%- include("footer")%>

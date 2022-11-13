@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="./img/logo.png" type="image/x-icon">
+    <title>Shanyraq</title>
+</head>
+<body>
+    <div class="navbar-menu">
+    <header>
+        
+            <ul class="menu-bar"> 
+               <a href="index"> <li class="menu-li" >Главная</li></a>
+                <a href="about"><li class="menu-li" >О нас</li></a>
+                <a href="parents"><li class="menu-li"  >Для родителей / учителей</li></a>
+               <a href="child"><li class="menu-li" >Для учеников</li>  </a>
+               <a href="https://forms.gle/d7qx6nywPGjaS8pH9"><li class="menu-li" >Менторство</li>  </a>
+                
+
+               <% if(req.isAuthenticated()){%>
+
+                <form  action="/account" method="get">
+                  <div style="padding-right:10px;" >
+                      <button  type="submit"  style="font-family: 'Montserrat'" class="btn btn-outline-dark"><%=req.user.email%></button>
+                  </div>
+                </form>
+                <form  action="/logout" method="get">
+                  <div style="padding-right:10px;" >
+                      <button  type="submit"  style="font-family: 'Tahoma'; background-color: #e78f4e; border-color: transparent;"  class="btn btn-info" ><big><i class='bx bx-log-out'></i></big></button>
+                  </div>
+                </form>
+            <%}else{%>
+
+               <form  action="/signIn" method="get">
+                <div style="padding-right:10px;" >
+                    <button  type="submit"  style="font-family: 'Tahoma'" class="menu-li">Вход</button>
+                </div>
+              </form>
+            <form  action="/signUp" method="get">
+              <div  style="padding-right:10px;">
+                  <button   type="submit"  style="font-family: 'Tahoma'" class="menu-li">Регистрация</button>
+              </div>
+              </form>   
+                <%}%>   
+            </ul>
+    
+            </div>
+          
+              
+          
+
+
+    </header>
